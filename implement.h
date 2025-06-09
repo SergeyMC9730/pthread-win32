@@ -42,7 +42,8 @@
 #define _IMPLEMENT_H
 
 #if !defined (PTW32_CONFIG_H)
-# error "config.h was not #included"
+#pragma message("config.h was not #included")
+#include "config.h"
 #endif
 
 #include "_ptw32.h"
